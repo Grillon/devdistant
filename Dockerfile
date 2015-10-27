@@ -1,4 +1,4 @@
-# Version: 0.0.2
+# Version: 0.0.3
 FROM centos:latest
 MAINTAINER Thierry VOGEL "thierry.vogel@moncourriel.eu"
 #WORKDIR /root
@@ -18,7 +18,7 @@ USER thierry
 WORKDIR /home/thierry
 ADD npm.sh /home/thierry/npm.sh
 ADD rvm.sh /home/thierry/rvm.sh
-ADD mini_titi.tgz /home/thierry
+ADD mini_titi.tar.gz /home/thierry
 ADD ".tmux.conf" /home/thierry/.tmux.conf
 ADD ".bashrc" /home/thierry/.bashrc
 RUN /home/thierry/npm.sh
