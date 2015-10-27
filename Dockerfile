@@ -23,3 +23,4 @@ ADD ".tmux.conf" /home/thierry/.tmux.conf
 ADD ".bashrc" /home/thierry/.bashrc
 RUN /home/thierry/npm.sh
 RUN /home/thierry/rvm.sh
+ADD ".bashrc" /home/thierry/.bashrc

@@ -8,6 +8,10 @@ PATH=$PATH:~/bin
 set -o vi
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
+if [[ -z "$USER" ]]
+then
+  USER=thierry
+fi
 if [[ -z "$TMUX" ]]
 then
 	tmux attach || tmux new-session -s "$USER" 
